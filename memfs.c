@@ -621,6 +621,8 @@ static struct fuse_operations memfs_oper = {
   .read         = memfs_read,
   .write        = memfs_write,
   .link         = memfs_link,
+  .chmod        = memfs_chmod,
+  .chown        = memfs_chown,
 };
 
 
