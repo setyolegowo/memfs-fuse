@@ -618,6 +618,7 @@ static struct fuse_operations memfs_oper = {
   .readdir      = memfs_readdir,
   .open         = memfs_open,
   .read         = memfs_read,
+  .write        = memfs_write
 };
 
 
