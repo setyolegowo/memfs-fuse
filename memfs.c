@@ -615,23 +615,9 @@ static int memfs_release(const char *path, struct fuse_file_info *fi) {
 
 static struct fuse_operations memfs_oper = {
   .getattr      = memfs_getattr,
-  .readlink     = memfs_readlink,
   .readdir      = memfs_readdir,
-  .mknod        = memfs_mknod,
-  .mkdir        = memfs_mkdir,
-  .symlink      = memfs_symlink,
-  .unlink       = memfs_unlink,
-  .rmdir        = memfs_rmdir,
-  .rename       = memfs_rename,
-  .link         = memfs_link,
-  .chmod        = memfs_chmod,
-  .chown        = memfs_chown,
-  .truncate     = memfs_truncate,
-  .utimens      = memfs_utimens,
   .open         = memfs_open,
   .read         = memfs_read,
-  .write        = memfs_write,
-  .release      = memfs_release
 };
 
 
